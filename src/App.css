@@ -1,38 +1,78 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.button {
+  background-color: black; /* Green */
+  border: none;
   color: white;
+  text-align: center;
+  text-decoration: none;
+
+  font-size: 16px;
+  height: auto;
+  width: auto;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background: #001224;
+  height: 100vh;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task {
+  display: block;
+  width: 80%;
+  height: 100%;
+  border-radius: 50%;
+  padding: 2.5px;
+  background-clip: content-box;
+}
+.appcontainers {
+  padding-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.input {
+  border: none;
+  color: black;
+  padding: auto;
+  text-align: absolute;
+  text-decoration: none;
+  display: inline-flex;
+  font-size: 16px;
+  height: 20px;
+  width: auto;
+  margin-bottom: 10px;
+}
+.duo {
+  position: relative;
+  padding-left: 550px;
+  padding-right: 500px;
+  padding-bottom: 50px;
+}
+.Tableau {
+  margin-bottom: 50px;
+  margin-right: 10px;
+}
+.background--custom {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 300vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+canvas#canvas {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  transform: rotate(deg) scale(2) translateY(0%);
+  --gradient-color-1: #ef008f;
+  --gradient-color-2: #6ec3f4;
+  --gradient-color-3: #7038ff;
+  --gradient-color-4: #ffba27;
+  --gradient-speed: 0.000002;
 }
